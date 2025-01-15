@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css" >
+    <link rel="stylesheet" href="style/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/1.png" type="image/png">
+    <title>Internet History</title>
+</head>
+<body>
+        <header class="navigation">
+           <div class="nav-logo"><a href="#">YK Design Studio</a></div>
+                <input type="checkbox" id="check-menu" >
+                <label for="check-menu" class="icons">
+                   <i class='bx bx-menu' id="menu-icon"></i>
+                   <i class="bx bx-x" id="close-icon"></i>
+                 </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <!-- using aria-label here for Accessibility 
+                 conctactus have a specific class to ajust it in css-->
+                <ul>
+                <li><a href="home.html" aria-label="Home" style="--i:0;">Home</a></li>
+                <li><a href="Technical-development.html" aria-label="Technical Development" style="--i:1;">Technical Development</a></li>
+                <li><a href="significant-figures.html" aria-label="Significant Figures" style="--i:2;">Significant Figures</a></li>
+                <li><a href="agile.html" aria-label="Agile Methodologies" style="--i:3;">Agile Methodologies</a></li>
+                <li><a href="contactus.html" aria-label="Contact Us" style="--i:4;" class="nav-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+              <h1>The Evolution of the Internet</h1>
+              <p>From ARPANET to the World Wide Web</p>
+              <a href="Technical-development.html" class="banner-button" role="button">Learn More</a>
+            </div>
+        </section>
+    
+   <div class="row" id="row">
+         <div class="card card1">
+             <a href="Technical-development.html" aria-label="Go to Technical-development">Technical Development</a>
+             <div> <i class='bx bx-right-arrow-alt'></i> </div>
+         </div>
+         <div class="card card2">
+             <a href="significant-figures.html" aria-label="Go to significant-figures">Significant Figures</a>
+             <div><i class='bx bx-right-arrow-alt'></i></div>
+         </div>
+         <div class="card card3">
+             <a href="agile.html" aria-label="Go to agile">Agile Methodologies</a>
+             <div><i class='bx bx-right-arrow-alt'></i></div>
+         </div>
+        </div>
+
+   <section class="welcome">
+    <h2>Welcome to YK Design Studio</h2>
+    <p> Where we explore the evolution of the internet from its early days to the modern digital world.
+        Discover key milestones in technology, meet the figures who shaped the web,
+        and learn how Agile methodologies are driving innovation today. Dive into our resources to stay informed on the past,present, and future of the internet.</p>
+    </section>
+
+    <section class="subscribe">
+        <div class="subscribe-content">
+            <h2>SIGN UP FOR EMAIL ALERTS</h2>
+            <p>Stay updated with the latest trends in internet technology and agile development.
+               Subscribe to our Newsletter now!</p>
+            <div class="registration-form">
+                <form action="/submit_registration" class="sub-form" method="post">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <div class="check-cont">
+                        <input type="checkbox" id="subscribe-checkbox" name="subscribe-checkbox">
+                        <label for="subscribe-checkbox"> Subscribe now for the latest news and features!</label>
+                    </div>
+                    
+                    <button class="sub-button" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <div class="sub-image">
+            <img src="/images/subscribe.png" alt="Subscribe to receive the latest internet technology updates">
+        </div>
+    </section>
+    
+</main>
+   <footer>
+    <div class="footer-container">
+
+        <div class="logo"><a href="#" class="logo">YK Design Studio</a></div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Technical-development.html">Technical Development</a></li>
+                <li><a href="significant-figures.html">Significant Figures</a></li>
+                <li><a href="agile.html">Agile Methodologies</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="twitter.html"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/ykdesignstudio.se/"><i class='bx bxl-instagram'></i></a>
+        </div>
+           
+    </div>
+    <div class="footer-copyright"><p>&copy; 2024 YK Design Studio. All Rights Reserved.</p> </div>
+   </footer>
+       
+ 
+
+    
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/agile.css" >
+    <link rel="stylesheet" href="style/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/1.png" type="image/png">
+    <title>Internet History</title>
+</head>
+<body>
+        <header class="navigation">
+           <div class="nav-logo"><a href="home.html">YK Design Studio</a></div>
+           <input type="checkbox" id="check-menu">
+           <label for="check-menu" class="icons">
+              <i class='bx bx-menu' id="menu-icon"></i>
+              <i class="bx bx-x" id="close-icon"></i>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <!-- using aria-label here for Accessibility 
+                 conctactus have a specific class to ajust it in css-->
+                <ul>
+                <li><a href="home.html" aria-label="Home" style="--i:0;">Home</a></li>
+                <li><a href="Technical-development.html" aria-label="Technical Development" style="--i:1;">Technical Development</a></li>
+                <li><a href="significant-figures.html" aria-label="Significant Figures" style="--i:2;">Significant Figures</a></li>
+                <li><a href="agile.html" aria-label="Agile Methodologies" style="--i:3;">Agile Methodologies</a></li>
+                <li><a href="contactus.html" aria-label="Contact Us" style="--i:4;" class="nav-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+<main>    
+        <section class="banner">
+          <div class="banner-content">
+            <h1>Agile Methodologies in Web Development</h1>
+          </div>
+        </section>
+        
+        <div class="big-section">
+            <div class="card-article">
+                <article class="card">
+                    <h2>Introduction to Agile</h2>
+                    <p>Agile methodologies refer to a set of principles and practices that prioritize flexibility, collaboration, and customer feedback in the development process. Originally introduced in the software development industry, Agile is now widely used across a variety of sectors, from product development to project management.</p>
+                </article>
+            </div>
+            <div class="card-article">
+                <div class="card card-images">
+                    <div class="image1" id="principles-agiles">
+                        <a href="#principles-agiles">Core Principles of Agile</a>
+                    </div>
+                    <div class="image2">
+                        <a href="#kanban">Kanban</a>
+                    </div>
+                    <div class="image3">
+                        <a href="#scrum">Scrum</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Core Principles Section -->
+            <div class="card-article" id="principles-agiles">
+                <article class="card">
+                    <h2>Core Principles of Agile</h2>
+                    <p>The Agile Manifesto outlines four core values:</p>
+                    <ul>
+                        <li>Individuals and interactions over processes and tools.</li>
+                        <li>Working software over comprehensive documentation.</li>
+                        <li>Customer collaboration over contract negotiation.</li>
+                        <li>Responding to change over following a plan.</li>
+                    </ul>
+                </article>
+            </div>
+        
+            <!-- Agile Frameworks Section -->
+            <div class="card-article">
+                <article class="card" id="kanban">
+                    <h2>Agile Frameworks</h2>
+                    <p>Popular Agile frameworks include:</p>
+                    <ul>
+                        <li>Scrum: Iterative development with time-boxed sprints.</li>
+                        <li>Kanban: Visualizing workflows and limiting work in progress.</li>
+                        <li>Extreme Programming (XP): Emphasizing technical excellence and customer involvement.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="card-article">
+                <article class="card" >
+                <h2>Kanban Overview</h2>
+                    <p> <span>Kanban</span> is an Agile framework used to manage workflows and improve efficiency. Originating from Toyota’s manufacturing system,
+                        Kanban helps teams visualize work, limit tasks in progress, and enhance overall productivity</p>
+                    <h3>Key Principles:</h3>
+                    <ol>
+                        <li><span>Visualize Work:</span>  Use a Kanban board to track tasks through stages like "To Do," "In Progress," and "Done."</li>
+                        <li><span>Limit Work in Progress (WIP):</span>  Prevent bottlenecks by capping the number of tasks that can be in progress at any time.</li>
+                        <li><span>Manage Flow:</span>  Focus on moving tasks smoothly through the process, identifying and addressing any slowdowns.</li>
+                        <li><span>Continuous Improvement:</span>  Regularly analyze the workflow and make adjustments to improve efficiency.</li>
+                    </ol>
+                    <h3>Benefits of Kanban:</h3>
+                    <ul>
+                        <li> <span>Increased Visibility:</span> Easily track the status of tasks with a visual board.</li>
+                        <li> <span>Flexibility:</span>  Adapt to changing priorities without fixed-length sprints.</li>
+                        <li> <span>Higher Efficiency:</span> Limit WIP to keep the focus on completing tasks.</li>
+                        <li> <span>Continuous Delivery:</span> Deliver updates as soon as tasks are ready.</li>
+                    </ul>
+                    <p id="scrum" >Kanban’s simplicity and adaptability make it an ideal framework for teams aiming for continuous improvement and flow-based work management.</p>
+                </article>
+                  
+            </div>
+        
+            <!-- The Agile Process Section -->
+            <div class="card-article">
+            <article class="card" >
+                <h2>Scrum Overview</h2>
+                <p> <span>Scrum</span> is an Agile framework that helps teams work together to deliver projects incrementally. It is built around fixed-length iterations called sprints, typically lasting 1-4 weeks,
+                     allowing teams to focus on delivering small, usable pieces of a project at a time.</p>
+                <h3>Key Elements of Scrum:</h3>
+                <ol>
+                    <li> <span class="list-title">Sprints:</span>  Time-boxed iterations where the team works on a set of prioritized tasks.</li>
+                    <li> <span class="list-title"> Scrum Roles:</span>
+                        <ul>
+                            <li> <span>Product Owner:</span>  Manages the product backlog and prioritizes work.</li>
+                            <li> <span>Scrum Master:</span>  Facilitates the process and removes obstacles.</li>
+                            <li> <span>Development Team:</span>  Works on delivering the product increment.</li>
+                        </ul>
+                    </li>
+                    <li> <span class="list-title">Scrum Ceremonies:</span> 
+                        <ul>
+                            <li> <span>Sprint Planning:</span>  Define the goals and tasks for the upcoming sprint.</li>
+                            <li> <span>Daily Scrum:</span>  A 15-minute stand-up meeting to track progress.</li>
+                            <li> <span>Sprint Review:</span>  Demo the completed work to stakeholders.</li>
+                            <li> <span>Sprint Retrospective:</span>  Discuss improvements for the next sprint.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Benefits of Scrum:</h3>
+                <ul>
+                    <li> <span>Predictable Progress:</span>  Fixed sprints provide a clear timeline for delivering features.</li>
+                    <li> <span>Adaptability:</span>  Priorities can be adjusted between sprints, responding to changes quickly.</li>
+                    <li> <span>Collaboration:</span>  Regular meetings and roles encourage communication and teamwork.</li>
+                    <li> <span>Continuous Improvement:</span>  The retrospective helps teams reflect and improve with every sprint.</li>
+                </ul>
+                <p >Scrum is ideal for teams that want to deliver products in a structured, iterative manner while remaining flexible to evolving project needs.</p>
+            </article>
+            </div>
+        
+            <!-- Benefits Section -->
+            <div class="card-article">
+                <article class="card">
+                    <h2>Benefits of Agile</h2>
+                    <p>Agile methodologies provide flexibility, enhance customer satisfaction, and encourage continuous improvement.</p>
+                </article>
+            </div>
+        
+            <!-- Challenges Section -->
+            <div class="card-article">
+                <article class="card">
+                    <h2>Challenges of Agile</h2>
+                    <p>While Agile offers many benefits, it also presents challenges such as dependency on team collaboration and difficulty in scaling for larger organizations.</p>
+                </article>
+            </div>
+        
+            <!-- Real-world Applications Section -->
+            <div class="card-article">
+                <article class="card">
+                    <h2>Real-world Applications</h2>
+                    <p>Many companies like Google and Microsoft use Agile frameworks to deliver products efficiently. Agile is widely adopted in web development for building everything from small websites to large-scale applications.</p>
+                </article>
+            </div>
+        
+            <!-- Conclusion Section -->
+            <div class="card-article">
+                <article class="card">
+                    <h2>Conclusion</h2>
+                    <p>Agile methodologies are an essential part of modern web development, helping teams stay adaptable, deliver quality products, and continuously improve their processes.</p>
+                </article>
+            </div>
+        </div>    
+        <div class="card-article">
+            <article class="card">
+                <h2>Scrum: How to do twice as much in half the time</h2>
+                <iframe width="590" height="350" src="https://www.youtube.com/embed/s4thQcgLCqk?si=a5LCpU8xKudP8MvV"
+                 title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 <p>Jeff Sutherland, co-creator of the Scrum methodology and co-author of the Agile Manifesto,
+                     explains how Agile principles can be applied beyond software development to industries
+                    like finance, healthcare, and telecom. Developed in the 1990s, Scrum has become a widely adopted framework for managing complex projects and boosting productivity. In this TEDx talk, Sutherland, a former US Air Force "Top Gun" and CEO of Scrum Inc.,
+                     shares insights on how Scrum can drive efficiency and success across various sectors.</p>
+            </article>
+           
+        </div>
+        <div class="references card-article">
+            <article class="card">
+                <h2>References</h2>
+                <ol>
+                    <li><a href="https://agilemanifesto.org/principles.html" target="_blank">Agile Alliance – The Agile Manifesto</a></li>
+                    <li><a href="https://www.atlassian.com/agile" target="_blank">What is the Agile methodology?</a></li>
+                    <li><a href="https://www.scrum.org/learning-series/what-is-scrum/" target="_blank">What is Scrum?</a></li>
+                    
+                </ol>
+            </article>
+        </div>
+        <div class="download-section card-article">
+            <article class="card">
+                <h2>Download Agile Methodology PDF</h2>
+                <p>If you want to learn more or keep a copy for future reference, you can download the Agile Methodology guide as a PDF by clicking the button below.</p>
+                <a href="/files/Agile_Methodologies_in_Web_Development.pdf" class="download-btn" download>Download PDF</a>
+            </article>
+        </div>
+        
+</main>    
+   
+    <footer>
+        <div class="footer-container">
+    
+            <div class="logo"><a href="home.html" class="logo">YK Design Studio</a></div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Technical-development.html">Technical Development</a></li>
+                    <li><a href="significant-figures.html">Significant Figures</a></li>
+                    <li><a href="agile.html">Agile Methodologies</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="twitter.html"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/ykdesignstudio.se/"><i class='bx bxl-instagram'></i></a>
+            </div>
+               
+        </div>
+        <div class="footer-copyright"><p>&copy; 2024 YK Design Studio. All Rights Reserved.</p> </div>
+       </footer>
+</body>        

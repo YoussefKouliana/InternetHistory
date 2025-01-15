@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+
+ /*Banner section*/
+ .banner {
+    width: 100%;
+    height: 90vh;
+    background-image:
+    linear-gradient(245deg, transparent 60%, #00122a), 
+    linear-gradient(to top, transparent 20%, #00122a),
+    linear-gradient(60deg, transparent 70%, #002a61), 
+    url(/images/Tim\ Berners-Lee.png) ;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 25%;
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+ }
+
+ .banner-content {
+    padding: 3rem 0 3rem 6rem;
+    width: 75%;
+    height: auto;
+    line-height: 2;
+ }
+
+ .banner-content h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+ }
+
+ h1, h2, h3 {
+    color: #002454;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* Table of Contents */
+
+ .table-of-contents {
+    margin-top: 30px;
+    padding: 40px;
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.table-of-contents::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #F59E0B;
+}
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.table-of-contents ul li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+.table-of-contents ul li::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #F59E0B;
+    border-radius: 50%;
+    z-index: 1;
+}
+.table-of-contents ul li a {
+    text-decoration: none;
+    color: #002454;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.table-of-contents ul li a:hover {
+    color: #F59E0B;
+}
+/* Section styling */
+.section {
+    margin-top: 25px;
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+.section h2 {
+    margin-top: 0;
+}
+.references {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F3F4F6;
+}
+.references ul {
+    list-style: none;
+    padding-left: 0;
+}
+.references ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    /* Styles for small phones */
+/*i changed the linear-gradients for the mobiles so the text be easier to read.*/
+.banner {
+    background-image:
+  linear-gradient(235deg, transparent 60%, #00122a), 
+  linear-gradient(135deg, transparent 20%, #00122a),
+  linear-gradient(180deg, transparent 70%, #002a61), 
+    url(/images/Tim\ Berners-Lee.png) ;
+ }
+
+}

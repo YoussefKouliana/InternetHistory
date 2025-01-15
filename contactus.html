@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contactus.css" >
+    <link rel="stylesheet" href="style/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/images/1.png" type="image/png">
+    <title>Internet History</title>
+</head>
+<body>
+    <header class="navigation">
+           <div class="nav-logo"><a href="home.html">YK Design Studio</a></div>
+           <input type="checkbox" id="check-menu" >
+           <label for="check-menu" class="icons">
+              <i class='bx bx-menu' id="menu-icon"></i>
+              <i class="bx bx-x" id="close-icon"></i>
+            </label>
+            <nav class="nav-links" aria-label="Main navigation">
+                <!-- using aria-label here for Accessibility 
+                 conctactus have a specific class to ajust it in css-->
+                <ul>
+                <li><a href="home.html" aria-label="Home" style="--i:0;">Home</a></li>
+                <li><a href="Technical-development.html" aria-label="Technical Development" style="--i:1;">Technical Development</a></li>
+                <li><a href="significant-figures.html" aria-label="Significant Figures" style="--i:2;">Significant Figures</a></li>
+                <li><a href="agile.html" aria-label="Agile Methodologies" style="--i:3;">Agile Methodologies</a></li>
+                <li><a href="contactus.html" aria-label="Contact Us" style="--i:4;" class="nav-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>    
+            
+        <div class="contact-wrapper">
+            <section class="contact-section">
+                <div class="contact-container">
+                    <h1>Contact Us</h1>
+                    <p>If you have any questions or would like to get in touch, feel free to send us a message below. We’d love to hear from you!</p>
+                    
+                    <!-- Contact Form -->
+                    <form class="contact-form" action="submit_form.php" method="POST">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required aria-required="true">
+    
+                        <!-- Dropdown for Reason of Contact -->
+                        <label for="contact-reason">Reason for Contact</label>
+                        <select id="contact-reason" name="contact-reason" aria-label="Choose the reason for contacting us">
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="collaboration">Collaboration</option>
+                        </select>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message" required aria-required="true"></textarea>
+    
+                        <!-- File Upload Option -->
+                        <label for="file-upload">Attach a File (optional)</label>
+                        <input type="file" id="file-upload" name="file-upload">
+                        
+                        <!-- Newsletter Signup Option -->
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to our newsletter for the latest updates!
+                        </label>
+    
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+    
+    
+    
+            <!-- Contact Information Section -->
+            <section class="contact-info">
+                <h2>Other Contact Options</h2>
+                <p>Email: yk@ykdesignstudio.com</p>
+                <p>Phone: +46 76 12 34 567</p>
+                <p>Address: 123 lorem St, Stockholm, Sweden</p>
+                <p>Business Hours: Monday - Friday, 9am - 5pm</p>
+            </section>
+    
+            <!-- FAQ Section -->
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <details class="faq-q">
+                    <summary> How long does it take to get a response?</summary>
+                   <p>We usually reply within 1-2 business days.</p>
+                    
+                </details>
+                <details class="faq-q">
+                    <summary> Can I visit your office? </summary>
+                    <p>Yes! We're open from 9am to 5pm, Monday to Friday.</p>
+                </details>
+            </section>
+    
+            <!-- Google Maps Section -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE" aria-label="Map showing the location of YK Design Studio"  allowfullscreen></iframe>
+            </div>
+    
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h2>Follow Us</h2>
+                
+                <a href="twitter.html"><i class='bx bxl-twitter'></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                <a href="https://www.instagram.com/ykdesignstudio.se/"><i class='bx bxl-instagram'></i> Instagram</a>
+            </section>
+        </div>        
+        
+    </main>
+    <footer>
+            <div class="footer-container">
+        
+                <div class="logo"><a href="home.html" class="logo">YK Design Studio</a></div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Technical-development.html">Technical Development</a></li>
+                        <li><a href="significant-figures.html">Significant Figures</a></li>
+                        <li><a href="agile.html">Agile Methodologies</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="twitter.html"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/ykdesignstudio.se/"><i class='bx bxl-instagram'></i></a>
+                </div>
+                   
+            </div>
+            <div class="footer-copyright"><p>&copy; 2024 YK Design Studio. All Rights Reserved.</p> </div>
+       </footer>
+</body>        
